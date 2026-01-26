@@ -3,56 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Engineer | Portfolio</title>
+    <title>Matias G. Salaris | AI Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <nav>
-            <div class="logo">Alex.AI</div>
-            <div class="nav-links">
-                <a href="#projects">Work</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-
-        <section class="hero">
-            <h1 class="hidden">Hello, I'm Alex.</h1>
-            <div class="subtitle hidden">
-                I build <span id="typewriter"></span><span class="cursor">&nbsp;</span>
-            </div>
-        </section>
-
-        <section id="projects">
-            <span class="section-title hidden">Selected Projects</span>
-            <div class="project-grid">
-                <div class="project-card hidden">
-                    <h3>LLM Inference Engine</h3>
-                    <p>Optimized low-latency inference server using Rust and CUDA kernels for custom architectures.</p>
-                    <div class="tech-stack">Python • PyTorch • Rust</div>
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://ui-avatars.com/api/?name=Matias+Salaris&background=2563eb&color=fff&size=200" alt="Matias G. Salaris" class="profile-img">
+                    <h1>Matias G. Salaris</h1>
+                    <div class="role-badge">AI Developer & Engineer</div>
                 </div>
-                <div class="project-card hidden">
-                    <h3>Computer Vision Pipeline</h3>
-                    <p>Real-time object detection system for automated quality control in manufacturing.</p>
-                    <div class="tech-stack">OpenCV • YOLOv8 • Docker</div>
+
+                <div class="profile-bio">
+                    <p>Engineering intelligent systems. Specializing in LLM optimization, Computer Vision, and scalable backend architecture.</p>
                 </div>
-                <div class="project-card hidden">
-                    <h3>RAG Chatbot</h3>
-                    <p>Context-aware conversational agent utilizing vector databases for enterprise documentation.</p>
-                    <div class="tech-stack">LangChain • Pinecone • OpenAI API</div>
+
+                <nav class="sidebar-nav">
+                    <a href="#about" class="nav-link active">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="profile-footer">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="mailto:email@example.com" class="social-link">Email</a>
                 </div>
             </div>
-        </section>
+        </aside>
 
-        <section id="contact">
-            <span class="section-title hidden">Let's Connect</span>
-            <h2 class="contact-header hidden">
-                I am currently open to new engineering challenges. If you want to discuss AI architecture or simple web dev, drop me a line.
-            </h2>
-            <a href="mailto:email@example.com" class="contact-btn hidden">Get in touch</a>
-        </section>
+        <main class="content">
+            
+            <section id="about" class="section">
+                <h2 class="section-heading">About</h2>
+                <div class="text-block">
+                    <p class="lead">I build the bridges between theoretical AI models and production-grade software.</p>
+                    <p>With a background in computer engineering, I focus on the "system" side of AI—ensuring models aren't just accurate, but fast, reliable, and scalable. My current focus is on <span class="highlight">Edge AI</span> and <span class="highlight">RAG pipelines</span>.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="tags">
+                            <span>Python</span><span>Rust</span><span>C++</span><span>TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI / ML</h3>
+                        <div class="tags">
+                            <span>PyTorch</span><span>TensorFlow</span><span>HuggingFace</span><span>CUDA</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Infrastructure</h3>
+                        <div class="tags">
+                            <span>Docker</span><span>Kubernetes</span><span>AWS</span><span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <h2 class="section-heading">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2023 — Present</div>
+                        <div class="timeline-content">
+                            <h3>Senior AI Engineer</h3>
+                            <span class="company">TechCorp Solutions</span>
+                            <p>Leading the deployment of generative AI tools for internal enterprise search. Reduced inference costs by 40% through quantization techniques.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2021 — 2023</div>
+                        <div class="timeline-content">
+                            <h3>Machine Learning Engineer</h3>
+                            <span class="company">DataFlow Systems</span>
+                            <p>Designed computer vision pipelines for manufacturing defect detection. Migrated legacy monoliths to microservices.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-heading">Selected Work</h2>
+                <div class="project-grid">
+                    <div class="project-card reveal">
+                        <div class="card-header">
+                            <h3>Neural Search Engine</h3>
+                            <a href="#" class="icon-link">↗</a>
+                        </div>
+                        <p>A semantic search engine built from scratch using Rust and ONNX Runtime for sub-millisecond query embedding.</p>
+                        <div class="tech-stack-mini">Rust • ONNX • Qdrant</div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="card-header">
+                            <h3>Auto-Agent</h3>
+                            <a href="#" class="icon-link">↗</a>
+                        </div>
+                        <p>Autonomous agent framework capable of planning and executing multi-step coding tasks via the GitHub API.</p>
+                        <div class="tech-stack-mini">Python • LangGraph • Docker</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2 class="section-heading">Get in Touch</h2>
+                <p>I am always interested in discussing new technologies and consulting opportunities.</p>
+                <a href="mailto:email@example.com" class="cta-button">Say Hello</a>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Matias G. Salaris</p>
+            </footer>
+
+        </main>
     </div>
 
     <script src="script.js"></script>
