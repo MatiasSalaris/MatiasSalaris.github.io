@@ -1,0 +1,12 @@
+{
+  "name": "matias-salaris-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html --watch=.",
+    "start": "live-server --port=3000 --open=/index.html --watch=."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
