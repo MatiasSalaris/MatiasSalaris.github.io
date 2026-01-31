@@ -32,7 +32,7 @@ body {
 /* --- SIDEBAR (PROFILE CARD) --- */
 .sidebar {
     background: var(--bg-body);
-    padding: 3rem;
+    padding: 4rem 3rem;
     height: 100vh;
     position: sticky; /* Keeps it fixed while scrolling */
     top: 0;
