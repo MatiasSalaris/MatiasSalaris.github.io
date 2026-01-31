@@ -48,6 +48,7 @@ body {
     box-shadow: var(--shadow);
     border: 1px solid var(--border);
     text-align: center;
+    margin: 2rem 2;
 }
 
 .profile-img {
@@ -232,9 +233,32 @@ body {
 
 .company {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: 500;
     color: var(--text-muted);
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.experience-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.experience-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
 }
 
 /* Projects Grid */
